@@ -35,7 +35,7 @@ void SavingsAccount::modifyInterestRate(double rate)
 //dividing that product by twelve and adding to the previous savings balance
 void SavingsAccount::calculateMonthlyInterest()
 {
-	savingsBalance = savingsBalance + (savingsBalance * annualInterestRate) / 12;
+	savingsBalance = savingsBalance + ((savingsBalance * annualInterestRate) / 12);
 }
 
 //returns current savings balance
